@@ -5,21 +5,23 @@
 
 body,html{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(78, 0, 0);
     color: white;
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
 
 }
 
-
+/*Parte do nav-bar*/
 
 header{
     border: 2px solid green;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 80px;
     display: flex;
@@ -28,15 +30,44 @@ header{
     align-items: center;
 }
 
-ul{
+nav{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     gap: 15px;
-    list-style-type: none;
-    
+    padding: 10px 20px 10px 20px;
+    border: 1px solid aqua;
+    font-size: 20px;
 }
 
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.add{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.perfilUsuario{
+    margin-bottom: 20px;
+    border: 1px solid green;
+    padding: 10px 20px 10px 20px;
+}
+
+/*A parte do main*/
+
 main{
-    width: 90%;
+    display: none;
+    position: absolute;
+    width: 95%;
+    min-height: 100%;
+    right: 0;
+    top: 20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
     background-color: white;
 }
