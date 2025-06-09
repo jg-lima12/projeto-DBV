@@ -1,5 +1,6 @@
 *{
     margin:0;
+    font-family: 'Roboto',sans-serif;
 
 }
 
@@ -36,32 +37,64 @@ nav{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 15px;
+    gap: 30px;
     padding: 10px 20px 10px 20px;
     border: 1px solid aqua;
     font-size: 20px;
 }
 
-nav a{
+nav .iconeNav, nav a{
     color: white;
     text-decoration: none;
 }
 
-.add{
-    margin-bottom: 10px;
-    font-size: 30px;
+nav a{
+    border: 1px solid aqua;
 }
 
-.perfilUsuario{
+nav .iconeNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.iconeNav h6{
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.botaoNav{
+    font-size: 25px;
+}
+.add{
+    margin-bottom: 18px;
+    font-size: 35px;
+}
+
+.perfilUsuario {
     margin-bottom: 20px;
     border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
     padding: 10px 20px 10px 20px;
+}
+
+.perfilUsuario a{
+    font-size: 25px;
+    color: white;
+}
+
+.perfilUsuario h6{
+    font-size:11px ;
+    letter-spacing: 1px;
 }
 
 /*A parte do main*/
 
 main{
-    display: none;
     position: absolute;
     width: 95%;
     min-height: 100%;
