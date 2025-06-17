@@ -67,6 +67,7 @@ nav .iconeNav{
 
 .botaoNav{
     font-size: 25px;
+    transition: 0.1s ease-in-out;
 }
 .add{
     margin-bottom: 20px;
@@ -103,6 +104,9 @@ nav .iconeNav{
     transition: background-color 0.3s ease;
 }
 
+.botaoNav:active{
+    transform: scale(0.9);
+}
 /*A parte do main*/
 
 main{
@@ -229,8 +233,9 @@ main{
     transition: transform 0.3s ease;
 }
 
-.iconeAtalhos i{
-    
+.mudarTamanho{
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
 
 }
 
@@ -245,10 +250,10 @@ main{
 }
 
 .iconeAtalhos:hover{
-    transform: scale(1.08);
+    transform: scale(1.04);
     cursor: pointer;
 }
 
-.iconeAtalhos:hover .iconeAtalhos i{
+.iconeAtalhos:hover .mudarTamanho{
     font-size: 30px;
 }
