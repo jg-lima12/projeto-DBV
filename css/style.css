@@ -20,6 +20,21 @@ body,html{
 
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(112, 112, 112);
+    border-radius: 10px;
+    
+}
+
+body::-webkit-scrollbar-track{
+    background-image: linear-gradient(to bottom,rgb(78, 0, 0),rgb(141, 0, 0),rgb(78, 0, 0));
+    
+}
+
 /*Parte do nav-bar*/
 
 header{
@@ -249,6 +264,13 @@ main{
     
 }
 
+#iconeAtalhos3{
+    background-color: rgb(57, 57, 255);
+}
+
+#iconeAtalhos4{
+    background-image:linear-gradient(to bottom,rgb(196, 0, 196),rgb(255, 188, 63)) ;
+}
 .iconeAtalhos:hover{
     transform: scale(1.04);
     cursor: pointer;
