@@ -17,6 +17,7 @@ body,html{
     background-image: linear-gradient(to bottom,rgb(78, 0, 0),rgb(141, 0, 0),rgb(78, 0, 0));
     color: white;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -122,6 +123,8 @@ nav .iconeNav{
 .botaoNav:active{
     transform: scale(0.9);
 }
+
+
 /*A parte do main*/
 
 main{
@@ -304,7 +307,6 @@ main{
 }
 
 .campoMateriais{
-    border: 1px solid red;
     width: 98%;
     min-height: 80vh;
 }
@@ -314,20 +316,58 @@ main{
 }
 
 .itensMateriais{
+    color: black;
     margin-top: 20px;
     display: flex;
+    width: 100%;
+    min-height: 40vh;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .cardIcones{
-    border: 1px solid red;
     display: flex;
+    flex-direction: column;
 }
 
 .campoIcones{
     width: 200px;
     height: 150px;
-    background-color: aqua;
+    background-color: rgb(143, 13, 13);
     border-radius: 10px;
     color: black;
+    transition: background-color 0.3s ease;
+}
+
+.campoIcones:hover{
+    cursor: pointer;
+    background-color: rgb(97, 13, 13);
+}
+
+.autorIcones{
+    margin-top: 5px;
+    display: flex;
+    font-size: 10px;
+    gap: 3px;
+}
+
+.autorIcones p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(105, 23, 23);
+}
+
+.fundoDeUsuario{
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(105, 23, 23);
+    font-size: 11px;
+    color: rgb(105, 23, 23);
 }
